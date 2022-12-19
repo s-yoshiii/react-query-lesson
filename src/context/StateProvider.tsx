@@ -8,7 +8,9 @@ interface StateContextType {
 }
 
 const SteteContext = createContext({} as StateContextType)
-export const StateProvider: FC = ({ children }) => {
+export const StateProvider: FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const [tasks, setTasks] = useState<Task[] | null>(null)
   const [dark, setDark] = useState(false)
   return (
