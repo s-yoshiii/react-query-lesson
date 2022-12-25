@@ -6,6 +6,7 @@ import { ChevronDoubleRightIcon } from '@heroicons/react/solid'
 export const ReactQueryA: FC = () => {
   const navigate = useNavigate()
   const { status, data } = useQueryTasks()
+  console.log('Rendered React-queryA')
   if (status === 'loading') return <div>Loading...</div>
   if (status === 'error') return <div>Error</div>
   return (

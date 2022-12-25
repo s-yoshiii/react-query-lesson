@@ -9,7 +9,7 @@ const getTasks = async () => {
 
 export const useQueryTasks = () => {
   return useQuery<Task[], Error>({
-    queryKey: 'tasks',
+    queryKey: ['tasks'],
     queryFn: getTasks,
     cacheTime: 30000,
     staleTime: 30000,

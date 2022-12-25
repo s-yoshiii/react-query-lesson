@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 interface Props {
   children: ReactNode
 }
-const Layout: FC<Props> = ({ children }) => {
+export const Layout: FC<Props> = ({ children }) => {
   return (
     <div className="flex justify-center items-center flex-col min-h-screen text-gray-600 font-mono">
       <header>
@@ -44,5 +44,3 @@ const Layout: FC<Props> = ({ children }) => {
     </div>
   )
 }
-
-export default Layout

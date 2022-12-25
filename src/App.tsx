@@ -1,13 +1,13 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { QueryClient, QueryClientProvider } from 'react-query'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { ClassicalFetchA } from './components/ClassicalFetchA'
 import { ClassicalFetchB } from './components/ClassicalFetchB'
 import { StateProvider } from './context/StateProvider'
-import Layout from './components/Layout'
+import { Layout } from './components/Layout'
 import { ReactQueryA } from './components/ReactQueryA'
 import { ReactQueryB } from './components/ReactQueryB'
-import { ReactQueryDevtools } from 'react-query-devtools'
 
 const queryClient = new QueryClient({
   defaultOptions: {
