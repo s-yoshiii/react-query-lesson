@@ -11,9 +11,11 @@ export const ReactQueryB: FC = () => {
   return (
     <>
       <p className="font-bold my-3">ReactQueryB</p>
-      {data?.map((task) => (
-        <p key={task.id}>{task.title}</p>
-      ))}
+      {data ? (
+        data?.map((task) => <p key={task.id}>{task.title}</p>)
+      ) : (
+        <p>No Cache Data</p>
+      )}
       <ChevronDoubleLeftIcon
         onClick={() => navigate('/')}
         className="h-5 w-5 text-blue-500 cursor-pointer"
