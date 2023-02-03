@@ -9,7 +9,7 @@ export const ContextA: FC = () => {
       <p className="font-bold my-3">ContextA</p>
       <p className="my-3">{dark ? 'on' : 'off'}</p>
       <button
-        className="py-2 py-3 text-sm text-white bg-indigo-600 hover:bg-indigo-700 rounded"
+        className="py-2 px-3 text-sm text-white bg-indigo-600 hover:bg-indigo-700 rounded"
         onClick={() => setDark(!dark)}
       >
         toggle mode
